@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Cassandra</title>
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+	<link rel="stylesheet" href="css/custom.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/solarized-light.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- Intro -->
+			<section>
+				<section data-background-color="white" data-background="img/title.png" data-background-size="100%">
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<img class="plain" src="img/you_are_here.png" height="150">
+					<h3>Hajime !</h3>
+					<aside class="notes">
+					</aside>
+				</section>
+			</section>
+
+			<!-- Partie 1 - Ceinture blanche : Qu'est-ce que le réactif ? -->
+			<section>
+				<section>
+					<h2></h2>
+					<img src="img/cassandra-logo.png" class="plain" width="300">
+					<aside class="notes">
+						Ça vous parle ?
+					</aside>
+				</section>
+				<section>
+					<h2>Le monde est asynchrone</h2>
+					<aside class="notes">
+						<ul>
+							<li>présentation synchrone/asynchrone</li>
+							<li>exemple de l'ascenseur ?</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>Reactive manifesto</h2>
+					<img src="img/manifesto.jpeg" class="plain">
+					<aside class="notes">
+						<ul>
+							<li>Message driven</li>
+							<li>Elastic</li>
+							<li>Resilient</li>
+							<li>Responsive</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>Message driven</h2>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h2>Performances/threading</h2>
+					<aside class="notes">
+					</aside>
+				</section>
+			</section>
+
+			<!-- Partie 2 - Ceinture bleue : Programmation réactive -->
+			<section>
+				<section>
+					<h2>Programmation reactive</h2>
+					<ul>
+						<li>Reactive eXtension</li>
+						<li>Stream processing</li>
+						<li>Modèle de thread</li>
+						<li>Objectif</li>
+					</ul>
+				</section>
+			</section>
+
+			<!-- Partie 3 - Ceinture noire : Système réactif -->
+			<section>
+				<section>
+					<h2>Système réactif</h2>
+					<ul>
+						<li>Aller plus loin</li>
+						<li></li>
+					</ul>
+				</section>
+			</section>
+
+			<!-- Part 4 - Aller plus loin -->
+			<section>
+				<section>
+					<ul>
+						<li>Actor</li>
+						<li>green thread</li>
+					</ul>
+					<img src="img/satellite.jpg" class="stretch"/>
+					<aside class="notes">
+						<h2>Pierre</h2>
+						TODO
+					<!-- expliquer que l'on utilise une colonne par capteur et pas par type de capteur, on peut mettre une grosse image dans une colonne sans souci -->
+					</aside>
+			</section>
+
+			<section>
+				<section>
+						<h2>Fin</h2>
+				</section>
+			</section>
+
+			<section>
+				<h2>Licence</h2>
+				Pour ce qui concerne tous les contenus que nous avons produits dans cette présentation :
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Découvrir les subtilités de Cassandra</span> de <a xmlns:cc="http://creativecommons.org/ns#" href="https://barmic.github.io/viseo-take-an-hour_cassandra" property="cc:attributionName" rel="cc:attributionURL">Viseo -  Pierre Bourret & Michel Barret</a> est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">licence Creative Commons Attribution - Pas d’Utilisation Commerciale 4.0 International</a>.<br />Fondé(e) sur une œuvre à <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/barmic/viseo-take-an-hour_cassandra.git" rel="dct:source">https://github.com/barmic/viseo-take-an-hour_cassandra.git</a>.
+			</section>
+		</div>
+	</div>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// Required, even if empty.
+		Reveal.initialize({
+            dependencies: [
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/tagcloud/tagcloud.js', async: true }
+            ],
+            // slideNumber: 'c/t', // Absolute slide numbers (with total).
+            slideNumber: true, // Enable hierarchical slide numbers
+            history: true // Enable slide number in URL fragment
+		});
+		// Automatic fragment numbering
+var fragmentNumbering = function ( event ) {
+  var fragments = $(event.currentSlide).find('.fragment');
+  var order = new Array(fragments.length);
+
+  $(fragments).filter('[data-index]').each( function () {
+    var index = parseInt($(this).attr('data-index')) - 1;
+    if (index < 0 || index >= order.length) {
+      alert('Invalid data-index: ' + index);
+      return;
+    }
+    if (typeof order[index] == 'undefined') {
+      order[index] = [ $(this) ];
+    } else {
+      order[index].push($(this));
+    }
+  });
+
+  var index = 0;
+  $(fragments).not('[data-index]').each( function () {
+    while(typeof order[index] != 'undefined') {
+      index = index + 1;
+    }
+    order[index] = [ $(this) ];
+  });
+
+  $(order).each( function (index) {
+    $(this).each( function () {
+      $(this).attr('data-fragment-index', index);
+    })
+  });
+};
+Reveal.addEventListener('ready', fragmentNumbering);
+Reveal.addEventListener('slidechanged', fragmentNumbering);
+
+hljs.initHighlightingOnLoad();
+
+		function vidplay() {
+			var video = document.getElementById("Video1");
+			if (video.paused) {
+				video.play();
+			}
+		}
+	</script>
+</body>
+</html>
