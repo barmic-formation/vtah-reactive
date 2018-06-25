@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="64cm" height="31cm" viewBox="156 50 1271 612" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs/>
+  <g id="Arrière-plan">
+    <image x="691" y="50" width="217" height="112.908" xlink:href="file:///home/michel/Downloads/spark.png"/>
+    <image x="1041" y="160" width="125" height="125" xlink:href="file:///home/michel/Downloads/elastic.png"/>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="1382" cy="141" rx="6" ry="6"/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="1358" y1="153" x2="1406" y2="153"/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="1382" y1="147" x2="1382" y2="177"/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="1382" y1="177" x2="1358" y2="203"/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="1382" y1="177" x2="1406" y2="203"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1382" y="226.9">
+        <tspan x="1382" y="226.9">Météorologue</tspan>
+      </text>
+    </g>
+    <image x="210" y="73" width="108" height="98.1818" xlink:href="station-meteo.jpg"/>
+    <image x="156" y="194" width="109.333" height="82" xlink:href="station-meteo2.jpg"/>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="1365.83" cy="533.5" rx="6" ry="6"/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="1341.83" y1="545.5" x2="1389.83" y2="545.5"/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="1365.83" y1="539.5" x2="1365.83" y2="569.5"/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="1365.83" y1="569.5" x2="1341.83" y2="595.5"/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="1365.83" y1="569.5" x2="1389.83" y2="595.5"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1365.83" y="619.4">
+        <tspan x="1365.83" y="619.4">Client</tspan>
+      </text>
+    </g>
+    <image x="1081" y="432" width="121" height="121" xlink:href="neo4j.png"/>
+    <g>
+      <path style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" d="M 1211.72 492.5 C 1271.81,492.5 1269.99,569.5 1339.82,569.5"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1204.22,492.5 1214.22,487.5 1211.72,492.5 1214.22,497.5 "/>
+    </g>
+    <g>
+      <path style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" d="M 808.014 280.316 C 773.914,240.316 744.526,274.459 777.998,172.166"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="780.33,165.038 781.972,176.097 777.998,172.166 772.468,172.987 "/>
+    </g>
+    <g>
+      <path style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" d="M 852.401 162.903 C 882.901,195.449 867.603,181.532 838.845,265.818"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="836.423,272.916 834.92,261.837 838.845,265.818 844.385,265.066 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="949.001" y1="400.014" x2="1042.72" y2="292.335"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1047.64,286.678 1044.85,297.504 1042.72,292.335 1037.31,290.938 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="527.577" y1="359.37" x2="674.023" y2="384.13"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="520.182,358.12 530.875,354.857 527.577,359.37 529.208,364.717 "/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="681.418,385.38 670.725,388.643 674.023,384.13 672.392,378.783 "/>
+    </g>
+    <g>
+      <path style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" d="M 265.316 247.698 C 304.049,256.698 301.131,262.783 313.698,286.666"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="317.19,293.304 308.109,286.782 313.698,286.666 316.959,282.126 "/>
+    </g>
+    <g>
+      <path style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" d="M 318.001 149.619 C 339.4,160.529 392.298,184.164 403.913,237.154"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="405.519,244.48 398.494,235.782 403.913,237.154 408.262,233.641 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="957.216" y1="430.548" x2="1071.78" y2="469.061"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1078.88,471.45 1067.81,473.003 1071.78,469.061 1071,463.525 "/>
+    </g>
+    <g>
+      <path style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" d="M 1337.97 177 C 1245.51,177 1258.46,222.5 1175.73,222.5"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="1168.23,222.5 1178.23,217.5 1175.73,222.5 1178.23,227.5 "/>
+    </g>
+    <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="823.5" cy="409.5" rx="107.5" ry="107.5"/>
+    <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="554.5" cy="574.5" rx="54.9907" ry="54.9907"/>
+    <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="409.7" cy="342.5" rx="70.6995" ry="70.6995"/>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="947.8" cy="570.5" rx="6" ry="6"/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="923.8" y1="582.5" x2="971.8" y2="582.5"/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="947.8" y1="576.5" x2="947.8" y2="606.5"/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="947.8" y1="606.5" x2="923.8" y2="632.5"/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="947.8" y1="606.5" x2="971.8" y2="632.5"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="947.8" y="656.4">
+        <tspan x="947.8" y="656.4">Développeur</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x1="419.239" y1="434.28" x2="484.859" y2="540.928"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="488.789,547.316 479.29,541.419 484.859,540.928 487.807,536.179 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x1="772.429" y1="523.022" x2="639.284" y2="573.053"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="632.264,575.692 639.866,567.494 639.284,573.053 643.383,576.854 "/>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="906.738" y1="604.115" x2="641.652" y2="588.716"/>
+      <polygon style="fill: #000000; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="634.165,588.281 644.438,583.87 641.652,588.716 643.858,593.853 "/>
+    </g>
+    <text font-size="22.5774" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="409.7" y="350.325">
+      <tspan x="409.7" y="350.325">Grenoble</tspan>
+    </text>
+    <text font-size="22.5774" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="823.5" y="417.325">
+      <tspan x="823.5" y="417.325">Paris</tspan>
+    </text>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="331.5" cy="320.5" rx="27.5" ry="27.5"/>
+      <image x="304" y="305" width="57.5073" height="31" xlink:href="cassandra-logo.png"/>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="404.3" cy="410" rx="27.5" ry="27.5"/>
+      <image x="376.8" y="394.5" width="57.5073" height="31" xlink:href="cassandra-logo.png"/>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="412.1" cy="274.5" rx="27.5" ry="27.5"/>
+      <image x="384.6" y="259" width="57.5073" height="31" xlink:href="cassandra-logo.png"/>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="489.9" cy="353" rx="27.5" ry="27.5"/>
+      <image x="462.4" y="337.5" width="57.5073" height="31" xlink:href="cassandra-logo.png"/>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="711.7" cy="390.5" rx="27.5" ry="27.5"/>
+      <image x="684.2" y="375" width="57.5073" height="31" xlink:href="cassandra-logo.png"/>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="826.5" cy="302" rx="27.5" ry="27.5"/>
+      <image x="799" y="286.5" width="57.5073" height="31" xlink:href="cassandra-logo.png"/>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="930.3" cy="421.5" rx="27.5" ry="27.5"/>
+      <image x="902.8" y="406" width="57.5073" height="31" xlink:href="cassandra-logo.png"/>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="799.1" cy="513" rx="27.5" ry="27.5"/>
+      <image x="771.6" y="497.5" width="57.5073" height="31" xlink:href="cassandra-logo.png"/>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="504.9" cy="573.5" rx="27.5" ry="27.5"/>
+      <image x="477.4" y="558" width="57.5073" height="31" xlink:href="cassandra-logo.png"/>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="603.5" cy="586.5" rx="27.5" ry="27.5"/>
+      <image x="576" y="571" width="57.5073" height="31" xlink:href="cassandra-logo.png"/>
+    </g>
+  </g>
+</svg>
