@@ -81,6 +81,7 @@
 			<!-- Partie 2 - Ceinture bleue : Programmation réactive -->
 			<section>
 				<section>
+						<!-- TODO rework -->
 					<h2>Programmation reactive</h2>
 					<ul>
 						<li>Reactive eXtension</li>
@@ -89,6 +90,85 @@
 						<li>Objectif</li>
 					</ul>
 				</section>
+				<section>
+					<h2>Comment modéliser un flux de données ?</h2>
+					<h3>Marble diagrams</h2>
+				</section>
+				<section>
+						<h2>Stream simple</h2>
+						<img src="img/marble_ex_1.svg" class="marble-dig" alt="">
+				</section>
+				<section>
+						<h2>Stream avec erreur</h2>
+						<img src="img/marble_ex_2.svg" class="marble-dig" alt="">
+				</section>
+				<section>
+					<h2>Stream avec opération</h2>
+						<img src="img/marble_ex_3.svg" class="marble-dig" alt="">
+				</section>
+				<section>
+					<h2>Et en RX ?</h2>
+					<pre>
+						<code>Observable.of('A','B','C')
+.map(value => value.toLowerCase())
+.catch((err=>console.error(err.message)))
+.subscribe(value => console.log(value));
+						</code>
+					</pre>
+					<h6>Result</h6>
+					<pre>
+'a'
+'b'
+'c'
+					</pre>
+				</section>
+				<section>
+				<h2>Mais pourquoi faire ça ?</h2>
+				<ul>
+					<li>Eviter le callback hell</li>
+					<li>Gérer de multiples évenememnts</li>
+					<li>Avoir une approche déclarative</li>
+					<aside class="notes">
+						L'approche déclarative permet d'indiquer le résultat que l'on veut à chaque opération 
+						et non pas la manière de l'obtenir.
+					</aside>
+					<li>Facilter la programmation fonctionnelle</li>
+					<aside class="notes">
+						Le opérateurs fourni par RX sont pour la grande majorité prévus pour 
+						suivre les pradigmes de la programmation fonctiuonnel 
+						- Des fonctions comme paramètre des opérateurs 
+						- Création d'un nouveau stream à chaque retour d'un opérateur
+					</aside>
+				</ul>
+				</section>
+				<section>
+						<h2>Mais à quel point est-ce puissant ?</h2>
+				</section>
+				<section>
+					<h2>Example 1 : Handle async requests</h2>
+					<h4>eazy peazy</h4>
+				</section>
+				<section>
+					<pre>
+						<code>
+							<!-- TODO -->
+CODE angular, de la requete jusqu'au template, 
+mise en cache avec un share (transformation en observable HOT)
+						</code>
+					</pre>
+				</section>
+				<section>
+						<h2>Example 2 : Handle multiple clicks on button</h2>
+						<h4>eazy peazy</h4>
+					</section>
+					<section>
+						<pre>
+							<code>
+								<!-- TODO -->
+CODE JS, transformation d'un event en observable, handle du double click 
+							</code>
+						</pre>
+					</section>
 			</section>
 
 			<!-- Partie 3 - Ceinture noire : Système réactif -->
