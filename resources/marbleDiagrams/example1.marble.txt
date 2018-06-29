@@ -1,0 +1,4 @@
+marble marble_ex_1
+{
+    source a:     +--A-B--C-|
+}
