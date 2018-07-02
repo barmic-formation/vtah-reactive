@@ -56,7 +56,7 @@
 				</section>
 				<section>
 					<h2>Reactive manifesto</h2>
-					<img src="img/manifesto.jpeg" class="plain">
+					<img src="img/manifesto.jpeg" class="stretch plain">
 					<aside class="notes">
 						<ul>
 							<li>Message driven</li>
@@ -81,7 +81,7 @@
 			<!-- Partie 2 - Ceinture bleue : Programmation réactive -->
 			<section>
 				<section>
-						<!-- TODO rework -->
+					<!-- TODO rework -->
 					<h2>Programmation reactive</h2>
 					<ul>
 						<li>Reactive eXtension</li>
@@ -158,17 +158,24 @@ mise en cache avec un share (transformation en observable HOT)
 					</pre>
 				</section>
 				<section>
-						<h2>Example 2 : Handle multiple clicks on button</h2>
-						<h4>eazy peazy</h4>
-					</section>
-					<section>
-						<pre>
-							<code>
-								<!-- TODO -->
+					<h2>Example 2 : Handle multiple clicks on button</h2>
+					<h4>eazy peazy</h4>
+				</section>
+				<section>
+					<pre>
+						<code>
+						<!-- TODO -->
 CODE JS, transformation d'un event en observable, handle du double click 
-							</code>
-						</pre>
-					</section>
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h2>Conseils</h2>
+					<ul>
+						<li>Distinguer Rx des autres API de stream</li>
+						<li>Penser stream processing !</li>
+					</ul>
+				</section>
 			</section>
 
 			<!-- Partie 3 - Ceinture noire : Système réactif -->
@@ -176,7 +183,7 @@ CODE JS, transformation d'un event en observable, handle du double click
 				<section>
 					<h2>Système réactif</h2>
 					<!-- Amandine Buchard -->
-					<img src="http://combat.blog.lemonde.fr/files/2013/01/DSC_0018-1024x682.jpg" />
+					<img class="stretch" src="http://combat.blog.lemonde.fr/files/2013/01/DSC_0018-1024x682.jpg" />
 				</section>
 				<section>
 					<h2>Kezako?</h2>
@@ -187,7 +194,7 @@ CODE JS, transformation d'un event en observable, handle du double click
 				<section>
 					<h2>Pattern reactor</h2>
 					<!-- TODO à redessiner -->
-					<img src="https://www.celum.com/data/_dateimanager/Blog/Technology/Rene_loitzenberger/Bild1.png"/>
+					<img class="stretch" src="https://www.celum.com/data/_dateimanager/Blog/Technology/Rene_loitzenberger/Bild1.png"/>
 				</section>
 				<section>
 					<h2>Pattern reactor</h2>
@@ -200,20 +207,47 @@ CODE JS, transformation d'un event en observable, handle du double click
 				<!-- front -->
 				<section>
 					<h2>Implémentation front : Redux</h2>
-					<img src="img/redux.png" />
+					<img class="stretch" src="img/redux.png" />
 				</section>
 				<section>
 					<h2>Intérêts</h2>
-					<p>Supprimer le dirty checking</p>
+					<img class="stretch" src="https://cdn.css-tricks.com/wp-content/uploads/2016/03/redux-article-3-03.svg" />
+				</section>
+				<section>
+					<h2>Intérêts</h2>
+					<ul>
+						<li>Simplicité de l'état de l'application</li>
+						<li>Possibilité de rejouer les évènements</li>
+						<li>Utilisation de fonctions pures pour la logique métier</li>
+					</ul>
 				</section>
 				<!-- back -->
 				<section>
 					<h2>Implémentation back: Vertx</h2>
-					<img src="https://image.slidesharecdn.com/vert-140604064924-phpapp02/95/vertx-using-groovy-simplifying-nonblocking-code-6-638.jpg?cb=1401864721" />
+					<img class="stretch" src="https://image.slidesharecdn.com/vert-140604064924-phpapp02/95/vertx-using-groovy-simplifying-nonblocking-code-6-638.jpg?cb=1401864721" />
 				</section>
 				<section>
 					<h2>Intérêts</h2>
-					<p>Capacité à monter en charge</p>
+					<ul>
+						<li>montée en charge</li>
+						<li>gestion de la <i>backpressure</i></li>
+						<li>souplesse architecturale<br/>
+						« Diminuer le couplage tout en augmentant la cohérence »</li>
+					</ul>
+				</section>
+				<section>
+					<h2>REX/Conseils</h2>
+					<ul>
+						<li>NE JAMAIS BLOQUER L'EVENT LOOP!</li>
+						<li>changement fort de paradigme</li>
+						<li>attention aux backpressure !</li>
+						<li>peut devenir complexe → expérimentez !</li>
+						<li>garder un œil sur les threads utilisés</li>
+						<li>les tests d'intégration</li>
+						<li>s'intégre parfaitement avec CQRS/ES, une architecture hexagonale</li>
+						<li>outillage varié et très puissants (Message broker, API asynchrone,…)</li>
+						<li>penser stream processing</li>
+					</ul>
 				</section>
 			</section>
 
@@ -235,14 +269,13 @@ CODE JS, transformation d'un event en observable, handle du double click
 						<li>Actor</li>
 						<li>green thread</li>
 					</ul>
-					<img src="img/satellite.jpg" class="stretch"/>
 					<aside class="notes">
 					</aside>
 				</section>
 
 				<section>
 					<h2>Questions ?</h2>
-					<video id="questions" onshow="vidplay()" class="stretch" loop autoplay="true">
+					<video class="stretch" id="questions" onshow="vidplay()" class="stretch" loop autoplay="true">
 						<source src="https://media.giphy.com/media/8TCmfXE9mY9ck/giphy.mp4" type="video/mp4" />
 					</video>
 				</section>
