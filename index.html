@@ -68,17 +68,44 @@
 					<h2>Message driven</h2>
 					<img src="img/message-driven.svg" class="stretch plain"/>
 					<aside class="notes">
+						Considérer toutes les intéractions de notre logiciel comme des évènements que l'on reçoit ou que l'on émet.
 					</aside>
 				</section>
 				<section>
-					<h2>Performances/threading</h2>
+					<h2>Resilient</h2>
+					<img href="https://media.giphy.com/media/ZTER0B03S4UA8/giphy.gif" class="stretch plain"/>
 					<aside class="notes">
+						C'est la capacité à résister aux pannes.
+						L'asynchrone fourni un découplage permettant de survivre aux ralentissement voir aux pannes via de la gestion d'erreur.
+						On considérera les erreurs comme un nouvel évènement que l'on reçoit.
+					</aside>
+				</section>
+				<section>
+					<h2>Elastic</h2>
+					<img href="https://qph.ec.quoracdn.net/main-qimg-58e4012a420e0237c6acd19530af791d-c" class="stretch plain"/>
+					<aside class="notes">
+						C'est la capacité à scaler horizontalement.
+						On peut multiplier notre instance pour gérer plus d'évènements.
+						Lorsque l'on utilise de l'asynchrone on peut découpler l'émetteur d'un message de son récepteur.
+					</aside>
+				</section>
+				<section>
+					<h2>Responsive</h2>
+					<img href="https://blog.aircall.io/wp-content/uploads/2016/11/contact-center-vs.-call-center.png" class="stretch plain"/>
+					<aside class="notes">
+						C'est la capacité du système à toujours répondre.
+						Le fait d'avoir un système elastique et résilient donne presque de facto cette propriété.
 					</aside>
 				</section>
 			</section>
 
 			<!-- Partie 2 - Ceinture bleue : Programmation réactive -->
 			<section>
+				<section>
+					<!-- TODO rework -->
+					<h2>Programmation reactive</h2>
+					<img href="https://www.dragonsports.eu/373821-verylarge_default/kimono-judo-toile-dojo-master-dmkj909.jpg" class="stretch plain"/>
+				</section>
 				<section>
 					<!-- TODO rework -->
 					<h2>Programmation reactive</h2>
@@ -109,9 +136,9 @@
 					<h2>Et en RX ?</h2>
 					<pre>
 						<code>Observable.of('A','B','C')
-.map(value => value.toLowerCase())
-.catch((err=>console.error(err.message)))
-.subscribe(value => console.log(value));
+    .map(value => value.toLowerCase())
+    .catch((err=>console.error(err.message)))
+    .subscribe(value => console.log(value));
 						</code>
 					</pre>
 					<h6>Result</h6>
@@ -237,8 +264,8 @@ CODE JS, transformation d'un event en observable, handle du double click
 						<li>garder un œil sur les threads utilisés</li>
 						<li>les tests d'intégration</li>
 						<li>s'intégre parfaitement avec CQRS/ES, une architecture hexagonale</li>
-						<li>outillage varié et très puissants (Message broker, API asynchrone,…)</li>
-						<li>penser stream processing</li>
+						<li>outillage varié et « à la mode » et très puissants (Message broker, API asynchrone,…)</li>
+						<li>penser stream processing/stateless</li>
 					</ul>
 				</section>
 			</section>
@@ -256,7 +283,7 @@ CODE JS, transformation d'un event en observable, handle du double click
 					</ul>
 				</section>
 				<section>
-					<h3>D'autres solutions</h3>
+					<h3>Pour aller plus loin</h3>
 					<ul>
 						<li>Actor</li>
 						<li>green thread</li>
