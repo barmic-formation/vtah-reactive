@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="31cm" height="9cm" viewBox="468 329 612 166" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="492.775" y1="463.558" x2="492.775" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="520.925" y1="463.558" x2="520.925" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="549.075" y1="463.558" x2="549.075" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="577.225" y1="463.558" x2="577.225" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="605.375" y1="463.558" x2="605.375" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="633.525" y1="463.558" x2="633.525" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="661.675" y1="463.558" x2="661.675" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="689.825" y1="463.558" x2="689.825" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="717.975" y1="463.558" x2="717.975" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="746.125" y1="463.558" x2="746.125" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="774.275" y1="463.558" x2="774.275" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="802.425" y1="463.558" x2="802.425" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="830.575" y1="463.558" x2="830.575" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="858.725" y1="463.558" x2="858.725" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="886.875" y1="463.558" x2="886.875" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="915.025" y1="463.558" x2="915.025" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="943.175" y1="463.558" x2="943.175" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="971.325" y1="463.558" x2="971.325" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="999.475" y1="463.558" x2="999.475" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="1027.62" y1="463.558" x2="1027.62" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="1055.77" y1="463.558" x2="1055.77" y2="466.891"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="492.775" y1="463.558" x2="492.775" y2="473.558"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="492.775" y="488.558">0</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="633.525" y1="463.558" x2="633.525" y2="473.558"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="633.525" y="488.558">5</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="774.275" y1="463.558" x2="774.275" y2="473.558"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="774.275" y="488.558">10</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="915.025" y1="463.558" x2="915.025" y2="473.558"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="915.025" y="488.558">15</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="492.775" y1="463.558" x2="1055.77" y2="463.558"/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="490.158" y1="335.558" x2="1047.42" y2="336.54"/>
+    <polygon style="fill: #000000" points="1054.92,336.554 1044.91,341.536 1047.42,336.54 1044.93,331.536 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1054.92,336.554 1044.91,341.536 1047.42,336.54 1044.93,331.536 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="702.775" y1="404.558" x2="785.725" y2="404.577"/>
+    <polygon style="fill: #000000" points="793.225,404.579 783.224,409.577 785.725,404.577 783.226,399.577 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="793.225,404.579 783.224,409.577 785.725,404.577 783.226,399.577 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="663.561" y1="336.195" x2="699.802" y2="397.188"/>
+    <polygon style="fill: #000000" points="703.633,403.635 694.226,397.592 699.802,397.188 702.823,392.484 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="703.633,403.635 694.226,397.592 699.802,397.188 702.823,392.484 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="793.389" y1="404.476" x2="843.67" y2="343.4"/>
+    <polygon style="fill: #000000" points="848.437,337.61 845.941,348.508 843.67,343.4 838.221,342.152 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="848.437,337.61 845.941,348.508 843.67,343.4 838.221,342.152 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2.2; stroke: #ff0000" x1="662.959" y1="335.891" x2="850.273" y2="336.195"/>
+</svg>
