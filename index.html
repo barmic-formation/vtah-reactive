@@ -134,25 +134,19 @@
 				</section>
 				<section>
 					<h2>Et en RX ?</h2>
-					<pre>
-						<code>Observable.of('A','B','C')
-    .map(value => value.toLowerCase())
-    .catch((err=>console.error(err.message)))
-    .subscribe(value => console.log(value));
-						</code>
-					</pre>
+					<pre><code>Observable.of('A','B','C')
+	.map(value => value.toLowerCase())
+   	.subscribe(value => console.log(value));</code></pre>
 					<h6>Result</h6>
-					<pre>
-'a'
-'b'
-'c'
-					</pre>
+					<pre><code> 'a'
+ 'b'
+ 'c'</code></pre>
 				</section>
 				<section>
 				<h2>Mais pourquoi faire ça ?</h2>
 				<ul>
 					<li>Eviter le callback hell</li>
-					<li>Gérer de multiples évenememnts</li>
+					<li>Gérer des évenemements multiples</li>
 					<li>Avoir une approche déclarative</li>
 					<aside class="notes">
 						L'approche déclarative permet d'indiquer le résultat que l'on veut à chaque opération 
@@ -161,9 +155,10 @@
 					<li>Facilter la programmation fonctionnelle</li>
 					<aside class="notes">
 						Le opérateurs fourni par RX sont pour la grande majorité prévus pour 
-						suivre les pradigmes de la programmation fonctiuonnel 
-						- Des fonctions comme paramètre des opérateurs 
+						suivre les pradigmes de la programmation fonctionnelle 
+						- Des fonctions comme paramètre des opérateurs
 						- Création d'un nouveau stream à chaque retour d'un opérateur
+						- Pas de side effect sur le stream d'entrée
 					</aside>
 				</ul>
 				</section>
@@ -171,35 +166,45 @@
 						<h2>Mais à quel point est-ce puissant ?</h2>
 				</section>
 				<section>
-					<h2>Example 1 : Handle async requests</h2>
+					<h2>Example 1 : Afficher une horloge</h2>
 					<h4>eazy peazy</h4>
 				</section>
 				<section>
-					<pre>
-						<code>
-							<!-- TODO -->
-CODE angular, de la requete jusqu'au template, 
-mise en cache avec un share (transformation en observable HOT)
-						</code>
-					</pre>
+					<pre><code>@Component({
+  selector: 'async-observable-pipe',
+  template: '&lt;div&gt;Time: {{ time | async }}&lt;/div&gt;'
+  })
+
+export class AsyncExample {
+  time = new Observable((observer) => {
+    setInterval(() =>{
+      return observer.next(new Date().toString()), 1000);
+    }
+   });
+}</code></pre>
 				</section>
 				<section>
-					<h2>Example 2 : Handle multiple clicks on button</h2>
+					<h2>Example 2 : Gérer les doubles/triples clicks</h2>
 					<h4>eazy peazy</h4>
 				</section>
 				<section>
-					<pre>
-						<code>
-						<!-- TODO -->
-CODE JS, transformation d'un event en observable, handle du double click 
-						</code>
-					</pre>
+					<pre><code>let clickStream 
+	= Rx.Observable.fromEvent(document, 'click');
+
+clickStream
+  .buffer(clickStream.debounce(250))
+  .map(list => list.length)
+  .filter(x => x === 2)
+  .subscribe(() => {
+  	console.log('doubleclick');
+  })</code></pre>
 				</section>
 				<section>
 					<h2>Conseils</h2>
 					<ul>
 						<li class="fragment">Distinguer Rx des autres API de stream</li>
 						<li class="fragment">peut devenir complexe → expérimentez !</li>
+						<li class="fragment">N'ayez pas peur de(s) la doc(s) de Rx ! (example exhaust)</li> 
 						<li class="fragment">Penser stream processing !</li>
 					</ul>
 				</section>
@@ -311,6 +316,17 @@ CODE JS, transformation d'un event en observable, handle du double click
 				<h2>Licence</h2>
 				Pour ce qui concerne tous les contenus que nous avons produits dans cette présentation :
 				<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Devenez ceinture noire de système réactif</span> de <a xmlns:cc="http://creativecommons.org/ns#" href="https://barmic-slides.github.io/vtah-reactive/index.html#/" property="cc:attributionName" rel="cc:attributionURL">Viseo -  Abel Aoun & Michel Barret</a> est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">licence Creative Commons Attribution - Pas d’Utilisation Commerciale 4.0 International</a>.<br />Fondé(e) sur une œuvre à <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/barmic-slides/vtah-reactive.git" rel="dct:source">https://github.com/barmic-slides/vtah-reactive.git</a>.
+			</section>
+			<section>
+					<h2>References</h2>
+					<ul>
+						<li>
+							Example du bouble click : https://gist.github.com/mauriciosoares/5f7d185e900a23895e24 				
+						</li>
+						<li>
+							Example du pipe de l'horloge : https://angular.io/api/common/AsyncPipe
+						</li>
+					</ul>
 			</section>
 		</div>
 	</div>
