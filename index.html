@@ -34,19 +34,19 @@
 			<!-- Partie 1 - Ceinture blanche : Qu'est-ce que le réactif ? -->
 			<section>
 				<section>
-					<h2></h2>
-					<img src="https://media.giphy.com/media/w2RDsMneT4H4c/giphy.gif" class="stretch plain">
+					<h2>Asynchrone</h2>
+					<img src="img/ceinture-blanche.gif" class="stretch plain">
 					<aside class="notes">
 						Ça vous parle ?
 					</aside>
 				</section>
-				<section>
+				<section data-transition="none">
 					<h2>Le monde est asynchrone</h2>
 					<img src="img/async1.svg" class="stretch plain" >
 					<aside class="notes">
 					</aside>
 				</section>
-				<section>
+				<section data-transition="none">
 					<h2>Le monde est asynchrone</h2>
 					<img src="img/async2.svg" class="stretch plain" >
 					<aside class="notes">
@@ -198,8 +198,9 @@ CODE JS, transformation d'un event en observable, handle du double click
 				<section>
 					<h2>Conseils</h2>
 					<ul>
-						<li>Distinguer Rx des autres API de stream</li>
-						<li>Penser stream processing !</li>
+						<li class="fragment">Distinguer Rx des autres API de stream</li>
+						<li class="fragment">peut devenir complexe → expérimentez !</li>
+						<li class="fragment">Penser stream processing !</li>
 					</ul>
 				</section>
 			</section>
@@ -222,6 +223,10 @@ CODE JS, transformation d'un event en observable, handle du double click
 				<section>
 					<h2>Pattern reactor</h2>
 					<img class="stretch plain" src="img/reactor.svg"/>
+				</section>
+				<section>
+					<img src="img/stop.svg" class="stretch plain" />
+					<p>NE JAMAIS BLOQUER L'EVENT LOOP!</p>
 				</section>
 				<!-- front -->
 				<section>
@@ -249,7 +254,6 @@ CODE JS, transformation d'un event en observable, handle du double click
 					<h2>Intérêts</h2>
 					<ul>
 						<li>montée en charge</li>
-						<li>gestion de la <i>backpressure</i></li>
 						<li>souplesse architecturale<br/>
 						« Diminuer le couplage tout en augmentant la cohérence »</li>
 					</ul>
@@ -257,21 +261,26 @@ CODE JS, transformation d'un event en observable, handle du double click
 				<section>
 					<h2>REX/Conseils</h2>
 					<ul>
-						<li>NE JAMAIS BLOQUER L'EVENT LOOP!</li>
-						<li>changement fort de paradigme</li>
-						<li>attention aux backpressure !</li>
-						<li>peut devenir complexe → expérimentez !</li>
-						<li>garder un œil sur les threads utilisés</li>
-						<li>les tests d'intégration</li>
-						<li>s'intégre parfaitement avec CQRS/ES, une architecture hexagonale</li>
-						<li>outillage varié et « à la mode » et très puissants (Message broker, API asynchrone,…)</li>
-						<li>penser stream processing/stateless</li>
+						<li class="fragment">NE JAMAIS BLOQUER L'EVENT LOOP!</li>
+						<li class="fragment">attention aux backpressure</li>
+						<li class="fragment">garder un œil sur les threads utilisés</li>
+						<li class="fragment">les tests d'intégration</li>
 					</ul>
 				</section>
 			</section>
 
 			<!-- Part 4 - Aller plus loin -->
 			<section>
+				<section>
+					<h2>Conclusion</h2>
+					<ul>
+						<li>NE JAMAIS BLOQUER L'EVENT LOOP!</li>
+						<li>changement fort de paradigme</li>
+						<li>attention aux backpressure !</li>
+						<li>s'intégre parfaitement avec CQRS/ES, une architecture hexagonale</li>
+						<li>outillage varié et « à la mode » et très puissants (Message broker, API asynchrone,…)</li>
+					</ul>
+				</section>
 				<section>
 					<h3>Liens intéressants</h3>
 					<ul>
@@ -285,6 +294,7 @@ CODE JS, transformation d'un event en observable, handle du double click
 				<section>
 					<h3>Pour aller plus loin</h3>
 					<ul>
+						<ul>Functional Reactive Programming</ul>
 						<li>Actor</li>
 						<li>green thread</li>
 					</ul>
