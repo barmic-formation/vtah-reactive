@@ -104,6 +104,7 @@
 				<section>
 					<h2>Programmation reactive</h2>
 					<img src="https://www.dragonsports.eu/373821-verylarge_default/kimono-judo-toile-dojo-master-dmkj909.jpg" class="stretch plain"/>
+					<aside class="notes">Comme on veut recevoir des messages, on considère ça comme un flu de données</aside>
 				</section>
 				<section>
 					<h2>Comment modéliser un flux de données ?</h2>
@@ -134,7 +135,7 @@
 				<section>
 					<h2>Classe principales</h2>
 					<ul>
-						<li><code>Observable</code> au quel on souscrit</li>
+						<li><code>Observable</code> auquel on souscrit</li>
 						<li><code>Observer</code> object qui souscrit à l'Observable
 							<ul>
 								<li><code>onNext()</code></li>
@@ -148,15 +149,16 @@
 				<section>
 				<h2>Mais pourquoi faire ça ?</h2>
 				<ul>
-					<li>Eviter le callback hell</li>
 					<li>Gérer des évenemements multiples</li>
 					<li>Avoir une approche déclarative</li>
+					<li>Promouvoir la programmation fonctionnelle</li>
+					<li>Eviter le callback hell</li>
 					<aside class="notes">
+						Il y a d'autres façon de faire de l'asynchrone
+						<br/>******<br/>
 						L'approche déclarative permet d'indiquer le résultat que l'on veut à chaque opération 
 						et non pas la manière de l'obtenir.
-					</aside>
-					<li>Promouvoir la programmation fonctionnelle</li>
-					<aside class="notes">
+						<br/>******<br/>
 						Le opérateurs fourni par RX sont pour la grande majorité prévus pour 
 						suivre les pradigmes de la programmation fonctionnelle 
 						- Des fonctions comme paramètre des opérateurs
@@ -207,6 +209,10 @@ clickStream
 							</ul>
 						<li class="fragment">Pensez stream processing !</li>
 					</ul>
+					<aside class="notes">
+						Converts a higher-order Observable into a first-order Observable by dropping inner Observables while the previous inner Observable has not yet completed. <a href="http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-exhaust">EXHAUST</a>
+						<br/>Programation fonctionnelle 
+					</aside>
 				</section>
 			</section>
 
@@ -307,11 +313,22 @@ clickStream
 				<section>
 						<h2>References</h2>
 						<ul>
+							<ul>Les docs
+								<li>
+										<a href="https://rxjs-dev.firebaseapp.com/">Doc RXJS 1 (en beta)</a> 
+								</li>
+								<li>
+										<a href="http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-exhaust">Doc RXJS 2, un peu plus complète mais pas pratique à utiliser </a> 
+								</li>
+								<li>
+										<a href="http://reactivex.io/documentation">Doc RX, moins spécifique que les précedante</a> 
+								</li>
+							</ul>
 							<li>
-								Example du bouble click : https://gist.github.com/mauriciosoares/5f7d185e900a23895e24 				
+								<a href="https://gist.github.com/mauriciosoares/5f7d185e900a23895e24">Example du bouble click</a>
 							</li>
 							<li>
-								Example du pipe de l'horloge : https://angular.io/api/common/AsyncPipe
+								<a href="https://angular.io/api/common/AsyncPipe">Example du pipe de l'horloge</a>
 							</li>
 						</ul>
 				</section>
