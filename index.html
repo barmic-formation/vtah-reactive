@@ -102,19 +102,8 @@
 			<!-- Partie 2 - Ceinture bleue : Programmation réactive -->
 			<section>
 				<section>
-					<!-- TODO rework -->
 					<h2>Programmation reactive</h2>
 					<img src="https://www.dragonsports.eu/373821-verylarge_default/kimono-judo-toile-dojo-master-dmkj909.jpg" class="stretch plain"/>
-				</section>
-				<section>
-					<!-- TODO rework -->
-					<h2>Programmation reactive</h2>
-					<ul>
-						<li>Reactive eXtension</li>
-						<li>Stream processing</li>
-						<li>Modèle de thread</li>
-						<li>Objectif</li>
-					</ul>
 				</section>
 				<section>
 					<h2>Comment modéliser un flux de données ?</h2>
@@ -135,12 +124,26 @@
 				<section>
 					<h2>Et en RX ?</h2>
 					<pre><code>Observable.of('A','B','C')
-	.map(value => value.toLowerCase())
-   	.subscribe(value => console.log(value));</code></pre>
+	  .map(value => value.toLowerCase())
+   	  .subscribe(value => console.log(value));</code></pre>
 					<h6>Result</h6>
 					<pre><code> 'a'
  'b'
  'c'</code></pre>
+				</section>
+				<section>
+					<h2>Classe principales</h2>
+					<ul>
+						<li><code>Observable</code> au quel on souscrit</li>
+						<li><code>Observer</code> object qui souscrit à l'Observable
+							<ul>
+								<li><code>onNext()</code></li>
+								<li><code>onCompleted()</code></li>
+								<li><code>onError()</code></li>
+							</ul>
+						</li>
+						<li>Subscription permet de gérer les sousscription</li>
+					</ul>
 				</section>
 				<section>
 				<h2>Mais pourquoi faire ça ?</h2>
@@ -152,7 +155,7 @@
 						L'approche déclarative permet d'indiquer le résultat que l'on veut à chaque opération 
 						et non pas la manière de l'obtenir.
 					</aside>
-					<li>Facilter la programmation fonctionnelle</li>
+					<li>Promouvoir la programmation fonctionnelle</li>
 					<aside class="notes">
 						Le opérateurs fourni par RX sont pour la grande majorité prévus pour 
 						suivre les pradigmes de la programmation fonctionnelle 
@@ -167,9 +170,6 @@
 				</section>
 				<section>
 					<h2>Example 1 : Afficher une horloge</h2>
-					<h4>eazy peazy</h4>
-				</section>
-				<section>
 					<pre><code>@Component({
   selector: 'async-observable-pipe',
   template: '&lt;div&gt;Time: {{ time | async }}&lt;/div&gt;'
@@ -182,12 +182,10 @@ export class AsyncExample {
     }
    });
 }</code></pre>
+					<h4 class="fragment">eazy peazy</h4>
 				</section>
 				<section>
-					<h2>Example 2 : Gérer les doubles/triples clicks</h2>
-					<h4>eazy peazy</h4>
-				</section>
-				<section>
+					<h2>Example 2 : Gérer les doubles clicks</h2>
 					<pre><code>let clickStream 
 	= Rx.Observable.fromEvent(document, 'click');
 
@@ -195,17 +193,19 @@ clickStream
   .buffer(clickStream.debounce(250))
   .map(list => list.length)
   .filter(x => x === 2)
-  .subscribe(() => {
-  	console.log('doubleclick');
-  })</code></pre>
+  .subscribe(() => console.log('doubleclick'))</code></pre>
+  					<h4 class="fragment">eazy peazy</h4>
 				</section>
 				<section>
 					<h2>Conseils</h2>
 					<ul>
-						<li class="fragment">Distinguer Rx des autres API de stream</li>
-						<li class="fragment">peut devenir complexe → expérimentez !</li>
-						<li class="fragment">N'ayez pas peur de(s) la doc(s) de Rx ! (example exhaust)</li> 
-						<li class="fragment">Penser stream processing !</li>
+						<li class="fragment">Distinguez Rx des autres API de stream</li>
+						<li class="fragment">Peut devenir complexe → expérimentez !</li>
+						<li class="fragment">N'ayez pas peur de la doc de Rx ! (example exhaust)
+							<ul>
+								<li class="fragment"><a href="http://reactive.how/">reactive.how</a></li> </li>
+							</ul>
+						<li class="fragment">Pensez stream processing !</li>
 					</ul>
 				</section>
 			</section>
@@ -216,6 +216,10 @@ clickStream
 					<h2>Système réactif</h2>
 					<!-- Amandine Buchard -->
 					<img class="stretch" src="http://combat.blog.lemonde.fr/files/2013/01/DSC_0018-1024x682.jpg" />
+				</section>
+				<section>
+					<h2>Pourquoi ?</h2>
+					<img src="https://media.giphy.com/media/mp7lPwpEOCZ7G/giphy.gif" class="stretch"/>
 				</section>
 				<section>
 					<h2>Kezako?</h2>
@@ -259,17 +263,16 @@ clickStream
 					<h2>Intérêts</h2>
 					<ul>
 						<li>montée en charge</li>
-						<li>souplesse architecturale<br/>
-						« Diminuer le couplage tout en augmentant la cohérence »</li>
+						<li>souplesse architecturale</li>
 					</ul>
 				</section>
 				<section>
 					<h2>REX/Conseils</h2>
 					<ul>
 						<li class="fragment">NE JAMAIS BLOQUER L'EVENT LOOP!</li>
-						<li class="fragment">attention aux backpressure</li>
-						<li class="fragment">garder un œil sur les threads utilisés</li>
-						<li class="fragment">les tests d'intégration</li>
+						<li class="fragment">Attention aux backpressures</li>
+						<li class="fragment">Garder un œil sur les threads utilisés</li>
+						<li class="fragment">Les tests d'intégration</li>
 					</ul>
 				</section>
 			</section>
@@ -279,13 +282,13 @@ clickStream
 				<section>
 					<h2>Conclusion</h2>
 					<ul>
-						<li>changement fort de paradigme</li>
-						<li>s'intégre parfaitement avec CQRS/ES</li>
-						<li>bon levier technique pour l'architecture hexagonale</li>
-						<li>outillage varié et « à la mode » et très puissants
+						<li>Changement fort de paradigme</li>
+						<li>S'intégre parfaitement avec CQRS/ES</li>
+						<li>Bon levier technique pour l'architecture hexagonale</li>
+						<li>Outillage varié et « à la mode » et très puissants
 							<ul>
 								<li>Message broker</li>
-								<li>base de données</li>
+								<li>Base de données NoSQL</li>
 								<li>…</li>
 							</ul>
 						</li>
@@ -315,9 +318,9 @@ clickStream
 				<section>
 					<h3>Pour aller plus loin</h3>
 					<ul>
-						<ul>Functional Reactive Programming</ul>
-						<li>système à Actor (comme Akka ou Erlang)</li>
-						<li>green thread</li>
+						<li>Functional Reactive Programming</li>
+						<li>Système à Actor (comme Akka ou Erlang)</li>
+						<li>Green thread (go)</li>
 					</ul>
 					<aside class="notes">
 					</aside>
